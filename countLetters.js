@@ -23,3 +23,5 @@ const countLetters = function(word) {
 };
 
 console.log(countLetters('LHL'));
+assertEqual(result['L'], 2);
+assertEqual(result['H'], 1);
