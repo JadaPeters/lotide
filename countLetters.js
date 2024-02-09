@@ -6,10 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(word) {
+const countLetters = function(sentence) {
   const letterCounts = {};
 
-  for (const letter of word) {
+  for (const letter of sentence) {
     if (letter !== ' ') {
       if (letterCounts[letter]) {
         letterCounts[letter] += 1;
@@ -22,6 +22,6 @@ const countLetters = function(word) {
   return letterCounts;
 };
 
-console.log(countLetters('LHL'));
+const result = countLetters('LHL');
 assertEqual(result['L'], 2);
 assertEqual(result['H'], 1);
