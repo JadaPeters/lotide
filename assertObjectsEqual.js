@@ -51,5 +51,5 @@ const assertObjectsEqual = function(actual, expected) {
 
 // Example usage
 
-console.log(assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }))
-console.log(assertObjectsEqual({ c: "1", d: ["2", 3], b : 12 }, { b : 2, d: ["2", 3], c: "1" }))
+(assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }))
+(assertObjectsEqual({ c: "1", d: ["2", 3], b : 12 }, { b : 2, d: ["2", 3], c: "1" }))
