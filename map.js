@@ -36,8 +36,8 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-console.log(results1);
+const results1 = ['g', 'c', 't', 'm', 't'];
+assertArraysEqual(map(words, word => word[0]), results1);
 
 const strings = ["hello", "world", "lighthouse"];
 const result2 = ["HELLO", "WORLD", "LIGHTHOUSE"];
