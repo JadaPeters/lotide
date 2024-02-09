@@ -16,7 +16,7 @@ const eqArrays = function(array1, array2) {
     }
   }
   
-  return true;
+  return false;
 };
 
 const assertArraysEqual = function(array1, array2) {
