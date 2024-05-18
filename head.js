@@ -1,11 +1,6 @@
 // FUNCTION IMPLEMENTATION
 const head = function(arr) {
-  if (arr.length === 0) {
-    return undefined;
-  } else {
-    return arr[0];
-    
-  }
+  return arr[0];
 };
 // ASSERTION FUNCTION
 const assertEqual = function(actual, expected) {
