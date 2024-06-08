@@ -1,16 +1,17 @@
 // eqArrays
-const eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false; 
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) { 
-      return false; 
-    }
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
   }
   
-  return true; 
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
 };
+
 
 
 // eqObjects
@@ -41,7 +42,7 @@ const eqObjects = function(object1, object2) {
 };
 
 // assertObjectsEqual Function
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect;
   const objectsAreEqual = eqObjects(actual, expected);
 
@@ -57,3 +58,5 @@ const assertObjectsEqual = function (actual, expected) {
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertObjectsEqual(shirtObject, anotherShirtObject);
+
+

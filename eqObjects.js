@@ -7,20 +7,20 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+
 // eqArrays Function
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length){
+  if (arr1.length !== arr2.length) {
     return false;
   }
   
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
-      return false; 
+      return false;
     }
   }
   return true;
 };
-
 
 
 
@@ -51,7 +51,6 @@ const eqObjects = function(object1, object2) {
   
   return true;
 };
-
 
 
 // Test Cases

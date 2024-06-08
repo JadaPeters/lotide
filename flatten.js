@@ -1,16 +1,17 @@
 // eqArrays Function
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length){
+  if (arr1.length !== arr2.length) {
     return false;
   }
   
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
-      return false; 
+      return false;
     }
   }
   return true;
 };
+
 
 
 // asserEqual Function
@@ -26,6 +27,7 @@ const assertArraysEqual = function(actual, expected) {
 // FUNCTION IMPLEMENTATION
 // Create a function flatten which will take in an array containing elements including nested arrays of elements, and return a "flattened" version of the array.
 // The Array.isArray() method determines whether the passed value is an Array.
+// eslint-disable-next-line func-style
 function flatten(array) {
   let flattenedArray = [];
 

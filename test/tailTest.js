@@ -13,3 +13,9 @@ assertEqual(result2.length, 0); // Check if the result is an empty array
 
 const result3 = tail([]);
 assertEqual(result3.length, 0); // Check if the result is an empty array
+
+// AI Feedback
+// One small suggestion for improvement in your tail function:
+// instead of using a for loop to create a new array, you could use the slice method to make your code more concise.
+//  This is just a suggestion and not a requirement, as your current implementation is correct and meets the requirements of the assignment.
+
